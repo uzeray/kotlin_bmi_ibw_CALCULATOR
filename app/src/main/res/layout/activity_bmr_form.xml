@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1D5E"
+    tools:context=".BmrForm">
+
+    <EditText
+        android:id="@+id/lenghtText"
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="106dp"
+        android:ems="10"
+        android:hint="Lenght (cm)"
+        android:inputType="number"
+        android:textColor="#F44336"
+        android:textColorHint="#F44336"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightText" />
+
+    <ImageView
+        android:id="@+id/calculateBtn"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lenghtText"
+        app:srcCompat="@drawable/button_calculate" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="290dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Age (Like : 25)"
+        android:inputType="number"
+        android:textColor="#F44336"
+        android:textColorHint="#F44336"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/weightText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Weight (kg)"
+        android:inputType="number"
+        android:textColor="#F44336"
+        android:textColorHint="#F44336"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lenghtText"
+        app:layout_constraintEnd_toEndOf="@+id/lenghtText"
+        app:layout_constraintStart_toStartOf="@+id/lenghtText"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
